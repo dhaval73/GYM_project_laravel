@@ -1,0 +1,86 @@
+.home::before{
+    content: "";
+    background: url("../img/man-gc44479190_1920.jpg") center center/cover no-repeat;
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    /* opacity: .3; */
+    z-index: -10;
+    filter: brightness(20%);
+}
+
+#home{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+ display: flex;
+ max-width: 60%;
+ height: auto;
+ flex-direction: column;
+ justify-content: center;
+    align-items: center;
+}
+
+.home-heding{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 3rem;
+}
+.home-heding>b{
+    display:inline-block;
+    font-size: 3rem;
+    font-weight: 400;
+    color: tomato;
+}
+.home span{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    width:100%;
+    justify-content: center;
+    /* text-shadow: 0px 0px 2px wheat; */
+}
+
+.home-container>div>button{
+    background-color: transparent;
+    margin-top: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border:2px solid white;
+    width: 150px;
+}
+
+.home-container>div>button>a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.home-container>div>button:hover{
+    background-color:rgb(8, 8, 8);
+    box-shadow:0px 0px 5px 1px rgb(248, 246, 246);
+    color: black;
+    transition: .3s linear;
+}
+.fa-arrow-alt-circle-right:before {
+    content: "\f35a";
+    color: white;
+}
+
+@media screen and (max-width:500px) {
+    .home-heding{
+        font-size: 2.5rem;
+    }
+    .home-heding>b{
+        font-size: 2.5rem;
+    }
+    .home span{
+        font-size: 1rem;
+    }
+}
